@@ -1,29 +1,51 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi primer sitio</title>
+    <title>Leandro Zieman | Perfil Profesional</title>
+    <link rel="stylesheet" href="../Practicas/CSS/styles.css">
 </head>
 <body>
-    <Header>
-        <h1>Mi sitio personal</h1>
+
+    <header>
+        <a href="../index.html" class="btn-back">← Volver al Inicio</a>
+        <h1>Leandro Zieman</h1>
+        <p>Estudiante de Sistemas | Network Analyst</p>
+        
         <nav>
-            <ul>
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="intereses.html">Intereses</a></li>
-                <li><a href="contacto.html">Contacto</a></li>
-            </ul>
+            <a href="index.html" class="active">Inicio</a>
+            <a href="./pages/interes.html">Intereses</a>
+            <a href="./pages/contacto.html">Contacto</a>
         </nav>
-    </Header>
+    </header>
 
     <main>
-        <img src="img/InfografiaLZ.png" alt="Infografia de Leandro Zieman">
-        <P>Aqui se aprecia que hago de mi vida (no es mucho)</P>
+        <section class="infografia-container">
+            <h2>Infografía Personal</h2>
+            <div class="espacio-imagen">
+                <img src="./assets/infografia.jpg" alt="Infografía de Leandro Zieman" class="imagen-placeholder">
+            </div>
+        </section>
+
+        <section class="bio">
+            <h2>Sobre mí</h2>
+            <p>Soy una persona proactiva, con muchas ganas de seguir creciendo dentro del mundo IT. Actualmente estoy estudiando y formándome constantemente para seguir desarrollando mis conocimientos, especialmente orientados a infraestructura, redes y tecnología. Me considero alguien curioso, con facilidad para aprender y adaptarme, y siempre busco nuevos desafíos que me permitan crecer tanto profesional como personalmente.</p>
+        </section>
     </main>
 
     <footer>
-        <p>Todos los derechos reservados</p>
+        <div class="footer-content">
+        <p>&copy; 2026 Leandro Zieman</p>
+        <div class="social-links">
+            <a href="https://www.instagram.com/lechuzieman" target="_blank" rel="noopener">Instagram</a>
+            <a href="https://www.linkedin.com/in/leandro-zieman/" target="_blank" rel="noopener">LinkedIn</a>
+        </div>
+        <div class="cv-download">
+            <a href="./assets/Leandro_Zieman_CV_2026.pdf" class="btn-cv" download>Descargar mi CV en PDF</a>
+        </div>
+        <p>Buenos Aires, Argentina</p>
+    </div>
     </footer>
 
 </body>
